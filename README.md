@@ -11,6 +11,8 @@ To design and simulate an Integrator circuit using μA741 in Proteus Design Suit
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="1037" height="605" alt="image" src="https://github.com/user-attachments/assets/16dbcfe6-86fe-4016-9aec-4f1c0ddaea1f" />
+
 ## Connection Details:
 •	Input signal → Resistor (R) → Inverting terminal (Pin 2)
 •	Feedback capacitor (Cf) → Between Output (Pin 6) and Pin 2
@@ -35,8 +37,13 @@ For Sine Wave Input:
 6.	Run simulation.
 7.	Observe input and output waveforms on CRO.
 ## Tabulation
-S.No	           Input Signal	 Frequency	      Expected Output	               Practical Observation
+<img width="1022" height="341" alt="image" src="https://github.com/user-attachments/assets/8018aa8a-2972-4f5c-ad99-b6cbf7e9f027" />
+
 ## Waveforms
+<img width="1031" height="640" alt="image" src="https://github.com/user-attachments/assets/4e61120f-9785-497e-b59e-ccefb961337b" />
+![WhatsApp Image 2026-02-23 at 9 46 16 AM](https://github.com/user-attachments/assets/bc27273a-b6c0-4b3a-9f2d-0f59b8fa055e)
+![WhatsApp Image 2026-02-23 at 9 46 16 AM](https://github.com/user-attachments/assets/ec149995-e13a-4676-9343-a2a002a054ae)
+
 ## Result
 The Integrator circuit using μA741 Op-Amp was successfully designed and simulated in Proteus.
 The output waveform is proportional to the integral of the input signal.
@@ -47,7 +54,26 @@ The circuit behaves as an integrator.
 •	Used in waveform generation and analog computation.
 ## Viva Questions
 1.	What is an integrator circuit?
+
+An integrator is an op-amp circuit that produces an output voltage proportional to the integral of the input voltage.
+
 2.	Write the output equation of integrator.
+
+Vout = - (1 / RC) ∫ Vin dt
+
+Where:
+R = Resistor
+C = Capacitor
+Vin = Input voltage
+
 3.	Why does output lag input?
+
+The output lags input by 90° because integration of a sine wave produces a cosine wave which lags the input signal
+
 4.	What happens at very low frequency?
+
+At very low frequency, the output voltage increases and may cause saturation.
+
 5.	What is practical integrator?
+
+   A practical integrator is a modified integrator circuit that includes additional resistor to improve stability and prevent saturation.
